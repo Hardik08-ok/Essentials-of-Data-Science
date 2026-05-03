@@ -1,0 +1,11 @@
+from datetime import datetime
+
+date_1 = input()
+date_2 = input()
+
+a = datetime.strptime(date_1, "%Y-%m-%d")
+b = datetime.strptime(date_2, "%Y-%m-%d")
+
+x = b - a
+final = x.days
+print(final)
